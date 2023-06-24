@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome back </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-size: 20px;
+            background-image: url(https://st2.depositphotos.com/32927174/44098/i/450/depositphotos_440980738-stock-photo-purple-cloud-computing-lock-icon.jpg);
+        }
+        .container{
+            background-color: rgb(88, 54, 121);
+            justify-content: center;
+            padding:25px;
+            margin: 50px auto 0;
+            width: 500px;
+            color: whitesmoke;
+            border-top: 5px solid white;
+            border-radius: 0cap;
+            box-shadow: 0 0 7px 5px rgba(0, 0, 0, 0.5);
+        }
+        .container h2{
+            font-size: 24px;
+            line-height: 24px;
+            padding:25px;
+            text-align: center;
+        }
+        .input-name{
+            width: 60%;
+            margin:25px auto;
+            position: relative;
+
+        }
+        .input-name .lock{
+            padding: 8px 11px;
+            margin: 3px;
+        }
+        
+        .input-name .name{
+            padding: 8px 0px 8px 40px;
+            width: 80%;
+        }
+        .input-name .text-name{
+            padding: 8px 0px 8px 40px;
+            width: 80%;
+        }
+        .input-name i{
+            position: absolute;
+            font-size: 18px;
+            color:blueviolet;
+            border-right:1px solid #cccccc;
+        }
+        .text-name,.name{
+            border: 1px solid #cccccc;
+            outline:none;
+            -webkit-transition: all 0.30s ease-in-out ;
+            -moz-transition: all 0.30s ease-in-out ;
+            -ms-transition: all 0.30s ease-in-out ;
+            transition: all 0.30s ease-in-out ;
+        }
+        .text-name:hover,.name:hover{
+            background-color: #fafafa;
+        }
+        .text-name:focus,.name:focus{
+            border-color: 1px solid rgb(237, 233, 240);
+        }
+        .button{
+            background-color: rgb(56, 7, 88);
+            color: whitesmoke;
+            width: 70%;
+            padding: 8px 0px 8px 4px;
+            margin-left: 15px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 15px; 
+        }
+        .button:hover{
+            background-color: rgb(233, 201, 19);
+        }
+        .login a{
+            color: whitesmoke;
+            
+        }
+
+    </style>
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+       <h2>Login</h2>
+       <div class="form-container">
+            <center>
+            <form action="">
+                '{% csrf_token %}'
+                <div class="input-name">
+                    <i class="fa fa-user lock"></i>
+                    <input type="text" placeholder="Enter Username" class="name" name="username">
+                </div>
+            
+                <div class="input-name">
+                    <i class="fa fa-lock lock"></i>
+                    <input type="password" placeholder="Enter Password " class="text-name" name="password">
+                </div>
+                <div class="input-name">
+                    
+                    <input type="Submit"  class="button" value="Login">
+                </div>
+            </form>
+            </center>
+       </div> 
+       <div class="login">
+       <a href="signup.html">New user? Register here</a> 
+       </div>
+    </div>
+</body>
+</html>

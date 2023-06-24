@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<style>
+    .button{
+        
+        border-radius: 16px;
+        border: 1px solid blueviolet;
+        color: blueviolet;
+        bottom: 10px;
+        left: 200px;
+        width: 100px;
+        margin-left: 1200px;
+        font-size: 18px;
+        }
+    *{
+        background-image: linear-gradient(to right, rgb(166, 107, 209),violet);
+        width:75%;
+        height: auto;
+    }  
+    header{
+        padding: 0;
+    }
+    
+    .button:hover{
+        cursor:pointer;
+        
+    }
+    main h2{
+        color: rgb(116, 6, 42);
+        
+    }
+     
+</style>
+<body>
+    <header>
+        <div class="right">
+        <form action="">
+            <a href="{% url 'logout' %}" class="button" >Logout 
+               <!---- <input type="submit" class="button" Value="Logout">-->
+            </a>
+        </form>
+        </div>
+    </header>
+    <main>
+        <h2><i>Welcome to my Page</i></h2>
+    </main>
+</body>
+</html>
